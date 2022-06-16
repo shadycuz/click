@@ -305,7 +305,7 @@ def version_option(
     If ``version`` is not provided, Click will try to detect it using
     :func:`importlib.metadata.version` to get the version for the
     ``package_name``. On Python < 3.8, the ``importlib_metadata``
-    backport must be installed.
+    backport will be used to determine the version.
 
     If ``package_name`` is not provided, Click will try to detect it by
     inspecting the stack frames. This will be used to detect the
